@@ -70,22 +70,26 @@
   </head>
   <body style="height: 100vh">
     <!-- ekranin sol üstüne iki buton -->
-    <!--✅ TODO: Bunlari sağ tarafa al, aralarına boşluk koy -->
-    <!-- TODO: Yanına da login olan kişinin adını koy, mockdaki gibi. Yusuf yazsın logout butonunun solunda -->
-    <nav id="navbar" class="d-flex flex-row-reverse pt-3 px-3">
-      <div class="d-flex align-items-center" style="gap: 10px">
-        <div id="user-name">...</div>
-        <div>
-          <img
-            style="object-fit: cover; width: 35px; height: 35px"
-            class="rounded-circle"
-            id="user-image"
-          />
-        </div>
+    <!-- Butonları ve kullanıcı bilgilerini dikey olarak sıralayacak şekilde düzenlendi -->
+    <nav id="navbar" class="d-flex flex-column align-items-end pt-3 px-3">
+      <!-- flex-column: elementleri dikey sıralar -->
+      <!-- align-items-center: elementleri ortalar -->
+      <div style="margin-bottom: 10px;"> <!-- Aralara boşluk eklemek için margin-bottom kullanıldı -->
+        <div id="user-name">Kullanıcı Adı</div>
+      </div>
+      <div style="margin-bottom: 10px;">
+        <img
+          style="object-fit: cover; width: 35px; height: 35px"
+          class="rounded-circle"
+          id="user-image"
+        />
+      </div>
+      <div style="margin-bottom: 10px;"> <!-- Her buton için margin-bottom ile boşluk sağlandı -->
         <button id="login-btn" type="button" class="btn btn-green">
           login
         </button>
-
+      </div>
+      <div>
         <button
           id="stats-btn"
           type="button"

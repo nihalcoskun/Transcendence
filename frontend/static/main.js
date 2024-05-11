@@ -1323,7 +1323,7 @@ function renderScene() {
   ctx.imageSmoothingEnabled = false;
 
   // Border
-  ctx.strokeStyle = "white";
+  ctx.strokeStyle = "gray";
   ctx.lineWidth = 1;
   ctx.strokeRect(0, 0, screenWidth, screenHeight);
 

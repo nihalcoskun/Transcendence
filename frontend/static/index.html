@@ -115,21 +115,24 @@
         <div class="d-flex mt-3">
           <!-- Player setting card template -->
           <template id="player-settings-template">
-            <!-- yatay sıralama divi -->
-            <div
-              class="d-flex align-items-center flex-column px-3 py-2 border cool-shadow"
-            >
-              <!-- p1 kontrol tuşları ve ismi -->
+            <div class="d-flex align-items-center flex-column px-3 py-2 border cool-shadow">
+              <!-- Player name input moved up -->
+              <input
+                type="text"
+                style="width: 130px"
+                class="player-input form-control text-center mb-2"
+                placeholder="player name"
+              />
+          
+              <!-- Key combination blocks -->
               <div class="d-flex justify-content-center mb-2 py-2">
-                <!-- 'W' ve 'S'-->
                 <div
                   style="width: 50px; height: 50px"
                   class="left-key text-center border rounded d-flex align-items-center justify-content-center cool-shadow"
                 >
                   W
                 </div>
-                <!-- Space -->
-                <div style="width: 30px"></div>
+                <div style="width: 30px"></div> <!-- Spacer between keys -->
                 <div
                   style="width: 50px; height: 50px"
                   class="right-key text-center border rounded d-flex align-items-center justify-content-center cool-shadow"
@@ -137,15 +140,8 @@
                   S
                 </div>
               </div>
-              <!-- p1 isim girişi -->
-              <input
-                type="text"
-                style="width: 130px"
-                class="player-input form-control text-center"
-                placeholder="player name"
-              />
-              <!-- Space -->
-              <div style="height: 10px"></div>
+          
+              <!-- Paddle color picker remains at the bottom -->
               <input
                 type="color"
                 class="player-color"
@@ -153,9 +149,7 @@
                 value="#e66465"
                 id="paddle-color"
               />
-              <label t="pcolor" class="text-black" for="paddle-color"
-                >Paddle Color</label
-              >
+              <label t="pcolor" class="text-black" for="paddle-color">Paddle Color</label>
             </div>
           </template>
 

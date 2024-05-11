@@ -1319,7 +1319,7 @@ function render() {
   // BG CLEAR
   ctx.fillStyle = ui.backgroundColorEl.value;
   ctx.fillRect(0, 0, screenWidth * 2, screenHeight * 2);
-  ctx.fillStyle = "white";
+  ctx.fillStyle = "orange";
 
   ctx.save();
   // Fix the origin to the middle

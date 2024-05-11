@@ -5,7 +5,7 @@ from django.http import JsonResponse
 from django.http import HttpResponse
 from pong.models import Stats
 
-import jw"t
+import jwt
 import datetime
 from datetime import timezone
 import os

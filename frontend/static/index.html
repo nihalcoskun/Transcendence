@@ -27,8 +27,13 @@
         transition: all;
       }
 
+      .btn-green {
+       background-color:yellowgreen; /* Bootstrap yeşil rengi */
+       color: black; /* Yazı rengi beyaz */
+}
+
       #canvas {
-        background-color: black;
+        background-color: white;
         image-rendering: -moz-crisp-edges;
         image-rendering: -webkit-crisp-edges;
         image-rendering: pixelated;
@@ -40,7 +45,7 @@
         align-items: center;
       }
       body {
-        background-color: black;
+        background-color: white;
         height: 100vh;
       }
       .hidden {
@@ -77,14 +82,14 @@
             id="user-image"
           />
         </div>
-        <button id="login-btn" type="button" class="btn btn-primary">
+        <button id="login-btn" type="button" class="btn btn-green">
           login
         </button>
 
         <button
           id="stats-btn"
           type="button"
-          class="btn btn-primary"
+          class="btn btn-green"
           t="stats"
           data-bs-toggle="modal"
           data-bs-target="#stats-modal"
@@ -160,12 +165,12 @@
           >
             <div class="d-flex justify-content-center py-2 flex-column">
               <!-- artı butonu -->
-              <button id="add-player" type="button" class="btn btn-primary">
+              <button id="add-player" type="button" class="btn btn-green">
                 +
               </button>
               <!-- Space -->
               <div style="height: 5px"></div>
-              <button id="remove-player" type="button" class="btn btn-primary">
+              <button id="remove-player" type="button" class="btn btn-green">
                 -
               </button>
             </div>
@@ -179,7 +184,7 @@
           t="startGame"
           id="start-game-btn"
           type="button"
-          class="btn btn-primary"
+          class="btn btn-green"
         ></button>
         <!-- Space -->
         <div style="width: 10px"></div>
@@ -187,14 +192,14 @@
           t="startTournament"
           id="start-tournament-btn"
           type="button"
-          class="btn btn-primary"
+          class="btn btn-green"
         ></button>
         <!-- Space -->
         <div style="width: 10px"></div>
         <button
           t="settings"
           type="button"
-          class="btn btn-primary"
+          class="btn btn-green"
           data-bs-toggle="modal"
           data-bs-target="#exampleModal"
         ></button>
@@ -265,7 +270,7 @@
                 type="color"
                 id="background-color"
                 id="background-color"
-                value="#000000"
+                value="#FFFFFF"
               />
             </div>
             <div class="form-group">

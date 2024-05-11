@@ -84,14 +84,14 @@ const translations = {
     it: "Dimensione del font",
   },
   upArrow: {
-    en: "Arrow up",
-    tr: "Yukarı Ok",
-    it: "Freccia su",
+    en: "▲",
+    tr: "▲",
+    it: "▲",
   },
   downArrow: {
-    en: "Arrow down",
-    tr: "Aşağı Ok",
-    it: "Freccia giù",
+    en: "▼",
+    tr: "▼",
+    it: "▼",
   },
 
   stats: {
@@ -127,17 +127,6 @@ const translations = {
     en: "Wins",
     tr: "Kazanma",
     it: "Vince",
-  },
-
-  upArrow: {
-    en: "Arrow up",
-    tr: "Yukarı Ok",
-    it: "Freccia su",
-  },
-  downArrow: {
-    en: "Arrow down",
-    tr: "Aşağı Ok",
-    it: "Freccia giù",
   },
   background: {
     en: "Background color",
@@ -325,7 +314,7 @@ class UI {
       localStorage.setItem("background-color", value);
     };
     this.backgroundColorEl.value =
-      localStorage.getItem("background-color") ?? "#000000";
+      localStorage.getItem("background-color") ?? "#FFFFFF";
     document.body.style.backgroundColor = this.backgroundColorEl.value;
 
     this.usernameEl.textContent = this.user ? this.user.username : "";
@@ -612,6 +601,7 @@ class Tournament {
   reset() {
     [this.t1, this.t2, this.t3, this.t4].forEach((el) => {
       el.style.backgroundColor = "";
+
     });
   }
 
@@ -1119,7 +1109,7 @@ class PlayerNames extends Entity {
       }
 
       ctx.scale(2, 2);
-      ctx.fillStyle = "white";
+      ctx.fillStyle = "black";
 
       const text = p.isDed ? translate("dead") : p.name;
       ctx.fillText(text, 0, 0);
@@ -1319,7 +1309,7 @@ function render() {
   // BG CLEAR
   ctx.fillStyle = ui.backgroundColorEl.value;
   ctx.fillRect(0, 0, screenWidth * 2, screenHeight * 2);
-  ctx.fillStyle = "white";
+  ctx.fillStyle = "orange";
 
   ctx.save();
   // Fix the origin to the middle
@@ -1333,7 +1323,7 @@ function renderScene() {
   ctx.imageSmoothingEnabled = false;
 
   // Border
-  ctx.strokeStyle = "white";
+  ctx.strokeStyle = "gray";
   ctx.lineWidth = 1;
   ctx.strokeRect(0, 0, screenWidth, screenHeight);
 

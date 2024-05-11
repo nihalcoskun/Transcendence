@@ -15,9 +15,12 @@
       crossorigin="anonymous"
     ></script>
 
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
     <style>
       html,
       body {
+        font-family: 'Press Start 2P', cursive;
         margin: 0 !important;
         padding: 0 !important;
         color: black;
@@ -28,8 +31,8 @@
       }
 
       .btn-green {
-       background-color:yellowgreen; /* Bootstrap yeşil rengi */
-       color: black; /* Yazı rengi beyaz */
+       background-color:yellowgreen; 
+       color: black; 
 }
 
       #canvas {
@@ -70,22 +73,26 @@
   </head>
   <body style="height: 100vh">
     <!-- ekranin sol üstüne iki buton -->
-    <!--✅ TODO: Bunlari sağ tarafa al, aralarına boşluk koy -->
-    <!-- TODO: Yanına da login olan kişinin adını koy, mockdaki gibi. Yusuf yazsın logout butonunun solunda -->
-    <nav id="navbar" class="d-flex flex-row-reverse pt-3 px-3">
-      <div class="d-flex align-items-center" style="gap: 10px">
-        <div id="user-name">...</div>
-        <div>
-          <img
-            style="object-fit: cover; width: 35px; height: 35px"
-            class="rounded-circle"
-            id="user-image"
-          />
-        </div>
+    <!-- Butonları ve kullanıcı bilgilerini dikey olarak sıralayacak şekilde düzenlendi -->
+    <nav id="navbar" class="d-flex flex-column align-items-end pt-3 px-3">
+      <!-- flex-column: elementleri dikey sıralar -->
+      <!-- align-items-center: elementleri ortalar -->
+      <div style="margin-bottom: 10px;"> 
+        <div id="user-name">Kullanıcı Adı</div>
+      </div>
+      <div style="margin-bottom: 10px;">
+        <img
+          style="object-fit: cover; width: 35px; height: 35px"
+          class="rounded-circle"
+          id="user-image"
+        />
+      </div>
+      <div style="margin-bottom: 10px;"> 
         <button id="login-btn" type="button" class="btn btn-green">
           login
         </button>
-
+      </div>
+      <div>
         <button
           id="stats-btn"
           type="button"
@@ -97,13 +104,12 @@
       </div>
     </nav>
 
-    <!-- TODO: Oyunu siyah arkaplanlı yapalım yüksek kontrast zart zurt söyleriz -->
+ 
 
     <!-- MAIN MENU -->
     <div id="menu">
-      <!-- Pong yazısı daha büyük olsun -->
       <div id="title" class="col-md-12 center mb-2">
-        <h1 style="font-size: 10rem">Pong</h1>
+        <h1 style="font-size: 8rem">42 Pong</h1>
       </div>
 
       <!-- Dikey ve yatay merkezleme-->
@@ -111,21 +117,24 @@
         <div class="d-flex mt-3">
           <!-- Player setting card template -->
           <template id="player-settings-template">
-            <!-- yatay sıralama divi -->
-            <div
-              class="d-flex align-items-center flex-column px-3 py-2 border cool-shadow"
-            >
-              <!-- p1 kontrol tuşları ve ismi -->
+            <div class="d-flex align-items-center flex-column px-3 py-2 border cool-shadow">
+              <!-- Player name input moved up -->
+              <input
+                type="text"
+                style="width: 130px"
+                class="player-input form-control text-center mb-2"
+                placeholder="player name"
+              />
+          
+              <!-- Key combination blocks -->
               <div class="d-flex justify-content-center mb-2 py-2">
-                <!-- 'W' ve 'S'-->
                 <div
                   style="width: 50px; height: 50px"
                   class="left-key text-center border rounded d-flex align-items-center justify-content-center cool-shadow"
                 >
                   W
                 </div>
-                <!-- Space -->
-                <div style="width: 30px"></div>
+                <div style="width: 30px"></div> <!-- Spacer between keys -->
                 <div
                   style="width: 50px; height: 50px"
                   class="right-key text-center border rounded d-flex align-items-center justify-content-center cool-shadow"
@@ -133,15 +142,8 @@
                   S
                 </div>
               </div>
-              <!-- p1 isim girişi -->
-              <input
-                type="text"
-                style="width: 130px"
-                class="player-input form-control text-center"
-                placeholder="player name"
-              />
-              <!-- Space -->
-              <div style="height: 10px"></div>
+          
+              <!-- Paddle color picker remains at the bottom -->
               <input
                 type="color"
                 class="player-color"
@@ -149,9 +151,7 @@
                 value="#e66465"
                 id="paddle-color"
               />
-              <label t="pcolor" class="text-white" for="paddle-color"
-                >Paddle Color</label
-              >
+              <label t="pcolor" class="text-black" for="paddle-color">Paddle Color</label>
             </div>
           </template>
 
@@ -399,7 +399,6 @@
             5
           </div>
           <div style="width: 100px" class="position-relative">
-            <!-- Yalancı -->
           </div>
           <div
             id="t6"
@@ -471,14 +470,14 @@
             <ol class="list-group" id="stats-games"></ol>
             <div style="width: 30px"></div>
 
-            <ol id="stats-most-winning" class="list-group mt-5" type="1">
-              <li class="list-group-item active" aria-current="true">
+            <ol id="stats-most-winning" class="list-group mt-5"   type="1">
+              <li class="list-group-item active" aria-current="true" style="background-color: yellowgreen;border-color: yellowgreen;">
                 Most Wining
               </li>
-              <li class="list-group-item">A second item..............</li>
-              <li class="list-group-item">A third item...............</li>
-              <li class="list-group-item">A fourth item..............</li>
-              <li class="list-group-item">And a fifth one............</li>
+              <li class="list-group-item"></li>
+              <li class="list-group-item"></li>
+              <li class="list-group-item"></li>
+              <li class="list-group-item"></li>
             </ol>
             <div class="center mt-3">
               <div

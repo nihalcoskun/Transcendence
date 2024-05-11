@@ -84,14 +84,14 @@ const translations = {
     it: "Dimensione del font",
   },
   upArrow: {
-    en: "Arrow up",
-    tr: "Yukarı Ok",
-    it: "Freccia su",
+    en: "▲",
+    tr: "▲",
+    it: "▲",
   },
   downArrow: {
-    en: "Arrow down",
-    tr: "Aşağı Ok",
-    it: "Freccia giù",
+    en: "▼",
+    tr: "▼",
+    it: "▼",
   },
 
   stats: {
@@ -127,17 +127,6 @@ const translations = {
     en: "Wins",
     tr: "Kazanma",
     it: "Vince",
-  },
-
-  upArrow: {
-    en: "Arrow up",
-    tr: "Yukarı Ok",
-    it: "Freccia su",
-  },
-  downArrow: {
-    en: "Arrow down",
-    tr: "Aşağı Ok",
-    it: "Freccia giù",
   },
   background: {
     en: "Background color",
@@ -965,7 +954,7 @@ const playersConfig = {
   },
   right: {
     index: 1,
-    keys: ["▲", "▼"],
+    keys: ["ArrowUp", "ArrowDown"],
     defaultColor: "#eb3734",
   },
   top: {

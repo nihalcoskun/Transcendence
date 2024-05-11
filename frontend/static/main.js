@@ -36,118 +36,118 @@ const translations = {
   startGame: {
     en: "Start Game",
     tr: "Oyuna Başla",
-    bo: "Pocni igru",
+    it: "Start Game",
   },
   startTournament: {
     en: "Start Tournament",
     tr: "Turnuvaya Başla",
-    bo: "Pocni turnir",
+    it: "Inizio Torneo",
   },
   dead: {
     en: "Dead",
     tr: "Öldü",
-    bo: "Mrtav",
+    it: "Morto",
   },
   logout: {
     en: "Logout",
     tr: "Oturumu kapat",
-    bo: "Odjaviti se",
+    it: "Disconnettersi",
   },
   login: {
     en: "Login",
     tr: "Oturum aç",
-    bo: "Prijava",
+    it: "Login",
   },
   settings: {
     en: "Settings",
     tr: "Ayarlar",
-    bo: "Postavci",
+    it: "Impostazioni",
   },
   pcolor: {
     en: "Paddle Color",
     tr: "Raket Rengi",
-    bo: "Boja rekete",
+    it: "Colore della pagaia",
   },
   bspeed: {
     en: "Ball Speed",
     tr: "Top Hızı",
-    bo: "Brzina lopte",
+    it: "Velocità della palla",
   },
   pspeed: {
     en: "Paddle Speed",
     tr: "Raket Hızı",
-    bo: "Brzina rekete",
+    it: "Velocità della pagaia",
   },
   fontsize: {
     en: "Font Size",
     tr: "Yazı Boyutu",
-    bo: "Velicina slova",
+    it: "Dimensione del font",
   },
   upArrow: {
     en: "Arrow up",
     tr: "Yukarı Ok",
-    bo: "Strelica gore",
+    it: "Freccia su",
   },
   downArrow: {
     en: "Arrow down",
     tr: "Aşağı Ok",
-    bo: "Strelica dole",
+    it: "Freccia giù",
   },
 
   stats: {
     en: "Stats",
     tr: "İstatistikler",
-    bo: "Statistika",
+    it: "Statistiche",
   },
 
   winner: {
     en: "Winner",
     tr: "Kazanan",
-    bo: "Pobjednik",
+    it: "Vincitrice",
   },
 
   players: {
     en: "Players",
     tr: "Oyuncular",
-    bo: "Igraci",
+    it: "Giocatrici",
   },
 
   mostWins: {
     en: "Most Winning",
     tr: "En Çok Kazananlar",
-    bo: "Najvise pobeda",
+    it: "Il più vincente",
   },
   oldGames: {
     en: "Old Games",
     tr: "Eski Oyunlar",
-    bo: "Stare igre",
+    it: "Vecchi giochi",
   },
 
   wins: {
     en: "Wins",
     tr: "Kazanma",
-    bo: "Pobjede",
+    it: "Vince",
   },
 
   upArrow: {
     en: "Arrow up",
     tr: "Yukarı Ok",
-    bo: "Strelica gore",
+    it: "Freccia su",
   },
   downArrow: {
     en: "Arrow down",
     tr: "Aşağı Ok",
-    bo: "Strelica dole",
+    it: "Freccia giù",
   },
   background: {
     en: "Background color",
     tr: "Arkaplan rengi",
-    bo: "Boja pozadine",
+    it: "Colore di sfondo",
   },
   rectangularArena: {
     en: "Rectangular Arena",
     tr: "Dikdörtgen Arena",
-    bo: "Pravougaoni teren",
+    it: "Arena rettangolare",
   },
 };
 

@@ -201,7 +201,7 @@ class UI {
 
     url.searchParams.append(
       "client_id",
-      "u-s4t2ud-4dc974719746974d72ff315f8fbcea6e431143cf4b959f77e647fe635206ca6e"
+      "u-s4t2ud-2aba07fe14dcaab37804b8abe0eca9419e91edd533b7687b8c9d52012a28c499"
     );
     url.searchParams.append("redirect_uri", "https://localhost/login");
     url.searchParams.append("response_type", "code");

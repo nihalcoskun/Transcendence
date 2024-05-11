@@ -612,6 +612,7 @@ class Tournament {
   reset() {
     [this.t1, this.t2, this.t3, this.t4].forEach((el) => {
       el.style.backgroundColor = "";
+
     });
   }
 
@@ -964,7 +965,7 @@ const playersConfig = {
   },
   right: {
     index: 1,
-    keys: ["ArrowUp", "ArrowDown"],
+    keys: ["▲", "▼"],
     defaultColor: "#eb3734",
   },
   top: {
@@ -1119,7 +1120,7 @@ class PlayerNames extends Entity {
       }
 
       ctx.scale(2, 2);
-      ctx.fillStyle = "white";
+      ctx.fillStyle = "black";
 
       const text = p.isDed ? translate("dead") : p.name;
       ctx.fillText(text, 0, 0);

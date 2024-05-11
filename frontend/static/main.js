@@ -325,7 +325,7 @@ class UI {
       localStorage.setItem("background-color", value);
     };
     this.backgroundColorEl.value =
-      localStorage.getItem("background-color") ?? "#000000";
+      localStorage.getItem("background-color") ?? "#FFFFFF";
     document.body.style.backgroundColor = this.backgroundColorEl.value;
 
     this.usernameEl.textContent = this.user ? this.user.username : "";

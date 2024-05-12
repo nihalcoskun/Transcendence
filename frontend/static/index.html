@@ -26,6 +26,10 @@
         color: black;
       }
 
+      .user-info-wrapper {
+      padding-right: 25px; /* Adjust this value to shift content to the desired position */
+    }
+
       div {
         transition: all;
       }
@@ -77,34 +81,35 @@
     <nav id="navbar" class="d-flex flex-column align-items-end pt-3 px-3">
       <!-- flex-column: elementleri dikey sıralar -->
       <!-- align-items-center: elementleri ortalar -->
-      <div style="margin-bottom: 10px;"> 
-        <div id="user-name">Kullanıcı Adı</div>
-      </div>
-      <div style="margin-bottom: 10px;">
-        <img
-          style="object-fit: cover; width: 35px; height: 35px"
-          class="rounded-circle"
-          id="user-image"
-        />
-      </div>
-      <div style="margin-bottom: 10px;"> 
-        <button id="login-btn" type="button" class="btn btn-green">
-          login
-        </button>
-      </div>
-      <div>
-        <button
-          id="stats-btn"
-          type="button"
-          class="btn btn-green"
-          t="stats"
-          data-bs-toggle="modal"
-          data-bs-target="#stats-modal"
-        ></button>
+      <div class="user-info-wrapper">
+        <div style="margin-bottom: 10px;">
+          <div id="user-name">Kullanıcı Adı</div>
+        </div>
+        <div style="margin-bottom: 10px;">
+          <img
+            style="object-fit: cover; width: 35px; height: 35px"
+            class="rounded-circle"
+            id="user-image"
+          />
+        </div>
+        <div style="margin-bottom: 10px;">
+          <button id="login-btn" type="button" class="btn btn-green">
+            login
+          </button>
+        </div>
+        <div>
+          <button
+            id="stats-btn"
+            type="button"
+            class="btn btn-green"
+            t="stats"
+            data-bs-toggle="modal"
+            data-bs-target="#stats-modal"
+          ></button>
+        </div>
       </div>
     </nav>
-
- 
+     
 
     <!-- MAIN MENU -->
     <div id="menu">
